@@ -1,0 +1,24 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+final class {{ module_info.name }}Router {
+
+    // MARK: Private properties
+    
+    private weak var transitionHandler: TransitionHandler?
+    
+    // MARK: Initialization
+    
+    init(transitionHandler: TransitionHandler) {
+        self.transitionHandler = transitionHandler
+    }
+}
+
+// MARK: {{ module_info.name }}RouterInput
+
+extension {{ module_info.name }}Router: {{ module_info.name }}RouterInput { }

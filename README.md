@@ -1,1 +1,0 @@
-# ktkv_viper

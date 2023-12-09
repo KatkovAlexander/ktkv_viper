@@ -1,0 +1,42 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}ViewController: UIViewController {
+
+    // MARK: Internal properties
+    
+    var output: {{ module_info.name }}ViewControllerOutput!
+
+    // MARK: Life cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+        output.viewDidLoad()
+    }
+}
+
+// MARK: {{module_info.name}}ViewControllerInput
+    
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewControllerInput {
+    
+    func setupInitialState() { }
+}
+
+// MARK: Private methods
+
+private extension {{ module_info.name }}ViewController {
+
+    func setupUI() {
+        configureLayout()
+    }
+    
+    func configureLayout() { }
+}

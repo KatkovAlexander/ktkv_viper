@@ -1,0 +1,39 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+final class {{ module_info.name }}Presenter {
+
+    // MARK: Private properties
+    
+    private weak var view:  {{ module_info.name }}ViewControllerInput?
+    private let interactor: {{ module_info.name }}InteractorInput
+    private let router: {{ module_info.name }}RouterInput
+    
+    // MARK: Initialization
+    
+    init(
+        view: {{ module_info.name }}ViewControllerInput,
+        interactor: {{ module_info.name }}InteractorInput,
+        router: {{ module_info.name }}RouterInput
+    ) {
+        self.view = view
+        self.interactor = interactor
+        self.router = router
+    }
+}
+
+// MARK: {{ module_info.name }}ViewControllerOutput
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewControllerOutput {
+
+    func viewDidLoad() { }
+}
+
+// MARK: {{ module_info.name }}InteractorOutput
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput { }
